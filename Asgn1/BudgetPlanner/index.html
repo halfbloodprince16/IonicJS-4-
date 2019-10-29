@@ -50,7 +50,7 @@
 									</ion-button>
 									<ion-button id="btn-confirm">
 										<ion-icon slot="start" name="add"></ion-icon>
-									Add Expense
+										Add Expense
 									</ion-button>
 								</div>
 							</ion-card-content>
@@ -59,15 +59,29 @@
 				</ion-row>
 
 				<ion-row>
-					<ion-col>
+					<ion-col size-md="6" offset-md="0">
 						<ion-list id="expenses-list"></ion-list>
+
+						<ion-card>
+							<ion-card-header>
+								<ion-card-title>
+									Total Expenses
+								</ion-card-title>
+							</ion-card-header>
+
+							<ion-card-content>
+								<p>Total Expense: <span id="total-expenses"></span></p>
+							</ion-card-content>
+						</ion-card>
 					</ion-col>
-				</ion-row>
+				</ion-row>				
 
 			</ion-grid>
 
 			
 		</ion-content>
+
+		<ion-alert-controller></ion-alert-controller>
   	</ion-app>
   	<script src="app.js"></script>
   </body>
